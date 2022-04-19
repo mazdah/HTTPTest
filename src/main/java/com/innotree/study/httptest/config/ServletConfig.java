@@ -23,6 +23,8 @@ public class ServletConfig implements WebMvcConfigurer, WebMvcRegistrations {
         registry.addResourceHandler("/resources/**").addResourceLocations("/resources/");
         registry.addResourceHandler("/js/**").addResourceLocations("/resources/js/");
         registry.addResourceHandler("/css/**").addResourceLocations("/resources/css/");
+        registry.addResourceHandler("/images/**").addResourceLocations("/resources/images/");
+        registry.addResourceHandler("/testresources/**").addResourceLocations("/resources/testresources/");
     }
 
 
