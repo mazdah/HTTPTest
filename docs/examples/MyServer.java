@@ -14,8 +14,6 @@ import java.net.Socket;
 
 public class MyServer {
 
-    // port 80은 root 계정에서만 허용
-    // sudo su로 루트 계정으로 바꾸고 실행해야함.
     public static void main(String[] args) throws IOException {
         ServerSocket listener = new ServerSocket(80);
         try {
@@ -51,6 +49,7 @@ public class MyServer {
                         dos.writeBytes("Connection: close\r\n");
                         dos.writeBytes("\r\n");
                         dos.writeBytes("요청한 페이지를 찾을 수 없습니다!!!");
+                        dos.writeBytes("\r\n");
                         dos.flush();
                     }
 
