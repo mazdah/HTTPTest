@@ -32,4 +32,18 @@ public class PageMoveController {
 
         return "/httpguide/httpresources";
     }
+
+    @GetMapping("/httpmethod")
+    public String goHttpMethod(HttpServletRequest req) {
+        logger.info("🔸🔸🔸🔸🔸 goHttpMethod");
+
+        return "/httpguide/httpmethod";
+    }
+
+    @GetMapping("/httpurl")
+    public String goHttpUrl(HttpServletRequest req) {
+        logger.info("🔸🔸🔸🔸🔸 goHttpUrl");
+
+        return "/httpguide/httpurl";
+    }
 }
